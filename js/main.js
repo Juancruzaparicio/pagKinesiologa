@@ -10,8 +10,8 @@ botonIniciarSesion.onclick = function() {
 }
 
 botonCargar.onclick = function() {
-    const user = document.querySelector('#user').value
-    const password = document.querySelector('#password').value
+    const user = form.user.value
+    const password = form.password.value
 
     inicioDeSesion(user,password)
 }
@@ -19,7 +19,7 @@ botonCargar.onclick = function() {
 function inicioDeSesion(user, password) {
     if(user){
         if(password){
-            alert(user, password)
+            console.log(user, password)
         }
     }
 }
