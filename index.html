@@ -3,11 +3,25 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>KIPAG</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>  
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>  
 </head>
 <body>
+    <h1>Bienvenida Kinesiologa!!!</h1>
+    <button id="iniciar-sesion" class="button">Iniciar Sesion</button>
+    <button id="registrarse" class="button">Registrarse</button>
+    <form id="inicio-de-sesion" class="oculto" onsubmit="return false">
+        <h2>Inicio de sesion</h2>
+        <div>
+            <label>Ingrese el nombre de usuario: </label>
+            <input name="user" type="text" placeholder="user23">
+            <label>Ingrese Contraseña:</label>
+            <input name="password" type="password">
+            <button id="cargar" class="button">inicio sesion</button>
+        </div>
+    </form>
+
     <script src='js/main.js'></script>
 </body>
 </html>
