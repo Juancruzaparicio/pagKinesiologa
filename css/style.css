@@ -1,37 +1,4 @@
-body {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-flow: column wrap;
-    background-color: black;
-    color: white;
-    width: 800px;
-    margin: 0 auto;
-    align-items: center;
-}
-
-div {
-    align-items: center;
-    flex-flow: column wrap;
-}
-
-input {
-    background-color: red;
-    border-style: dashed;
-    border-radius: 9px;
-}
-
 .oculto{
     display: none;
 }
 
-.button {
-    width: 200px;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 10px;
-    border-style: dashed;
-    border-radius: 9px;
-    background-color: red;
-
-}
