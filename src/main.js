@@ -84,7 +84,8 @@ function validarRegistro($input){
     if($input.value == ''){
         danger($input)
         return 0
-    } 
+    }
+    succession($input) 
     return 1
 }
 
@@ -100,12 +101,22 @@ function validarUsuario($mail, $password){
 }
 
 function danger($input){
-    $input.classList.remove('alert-primary')
+    if($input.classList.contains('alert-primary')){
+        $input.classList.remove('alert-primary')
+    }
+    if($input.classList.contains('alert-success')){
+        $input.classList.remove('alert-success')
+    }
     $input.classList.add('alert-danger')
 }
 
 function succession($input){
-    $input.classList.remove('alert-primary')
+    if($input.classList.contains('alert-primary')){
+        $input.classList.remove('alert-primary')
+    }
+    if($input.classList.contains('alert-danger')){
+        $input.classList.remove('alert-danger')
+    }
     $input.classList.add('alert-success')
 }
 
