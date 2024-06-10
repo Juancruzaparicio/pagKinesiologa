@@ -9,56 +9,67 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <p class="placeholder-glow">
+      <span class="placeholder col-12"></span>
+    </p>
     <div class="container text-center">
         <div class="row align-items-start">
-          <div class="col-6">
-            <h1>Bienvenida Kinesiologa!!!</h1>
+          <div class="col">
+            <h1>Bienvenido!!!</h1>
           </div>
           <div class="col">
             <button id="iniciar-sesion" class="btn btn-primary mb-3">Iniciar Sesion</button>
-          </div>
-          <div class="col">
             <button id="registrarse" class="btn btn-primary mb-3">Registrarse</button>
           </div>
         </div>
       </div>
-      <form id="inicio-sesion" class="row g-3 oculto" onsubmit="return false">
-        <div class="col-auto" role="alert">
+      <p class="placeholder-wave">
+        <span class="placeholder col-12"></span>
+      </p>
+      <p class="placeholder-glow">
+        <span class="placeholder col-12"></span>
+      </p>
+      <div id="inicio-sesion" class="row g-3 oculto contenedor">
+        <div class="row" role="alert">
           <label for="staticEmail2" class="visually-hidden">Email</label>
           <input type="text"  class="form-control-plaintext alert alert-primary" id="staticEmail2" placeholder="email@example.com">
         </div>
-        <div class="col-auto" role="alert">
+        <div class="row" role="alert">
           <label for="inputPassword2" class="visually-hidden">Password</label>
           <input type="password" class="form-control alert alert-primary" id="inputPassword2" placeholder="Password">
         </div>
-        <div class="col-auto">
+        <div class="row">
           <button id="confirmar" type="submit" class="btn btn-primary mb-3">Confirm identity</button>
         </div>
-      </form>
-      <form id="registro" class="oculto" onsubmit="return false">
-        <div class="mb-3 row">
+      </div>
+      <div id="registro" class="oculto">
+        <div class="mb-3 row contenedor">
             <label for="name" class="col-sm-2 col-form-label">Nombre</label>
             <div class="col-sm-10">
             <input type="text"  class="form-control-plaintext alert alert-primary" id="name" placeholder="Name" >
             </div>
         </div>
-        <div class="mb-3 row">
+        <div class="mb-3 row contenedor">
             <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
             <input type="text"  class="form-control-plaintext  alert alert-primary" id="staticEmail" placeholder="email@example.com">
             </div>
         </div>
-        <div class="mb-3 row">
+        <div class="mb-3 row contenedor">
             <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
             <div class="col-sm-10">
             <input type="password" class="form-control  alert alert-primary" id="inputPassword">
             </div>
         </div>
-        <div class="mb-3 row">
+        <div class="mb-3 row contenedor">
             <button id="registrar" type="submit" class="btn btn-primary mb-3">registrar</button>
         </div>
-    </form>
-    <h2 id="h2" class="oculto"></h2>
+      </div>
+      <h2 id="h2" class="oculto"></h2>
+      <p class="placeholder-wave">
+        <span class="placeholder col-12"></span>
+      </p>
+      
 
     <script src='src/main.js'></script>
 

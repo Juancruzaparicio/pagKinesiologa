@@ -18,10 +18,16 @@ $botonregistro.onclick = registrarse
 
 function iniciarSesion(){
     $formInicioSesion.classList.remove('oculto')
+    if(!$formRegistro.classList.contains('oculto')){
+        $formRegistro.classList.add('oculto')
+    }
 }
 
 function registroForm(){
     $formRegistro.className = ''
+    if(!$formInicioSesion.classList.contains('oculto')){
+        $formInicioSesion.classList.add('oculto')
+    }
 }
 
 function registrarse(){

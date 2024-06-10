@@ -1,4 +1,23 @@
 .oculto{
     display: none;
 }
+html{
+    display: grid;
+}
+body {
+    background-color: #75e14e;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contenedor{
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.boton{
+    margin: 5px;
+}
+
+
 
