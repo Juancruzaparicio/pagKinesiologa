@@ -13,7 +13,15 @@
         <span class="placeholder col-12"></span>
     </p>
     
-    <h1 class="text-center">KIPAG</h1>
+    <nav class="navbar ">
+        <div class="div1 container-fluid">
+          <a class="navbar-brand">Kipag</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
      
     <p class="placeholder-wave">
         <span class="placeholder col-12"></span>
@@ -21,18 +29,41 @@
     <p class="placeholder-glow">
         <span class="placeholder col-12"></span>
     </p>
-    <div class='contenedor'>
+    <div id="botones" class='contenedor'>
         <div class="row">
             
-            <button class="col btn btn-primary mb-3 boton">Presupuesto</button>
+            <button id="botonpresupuesto" class="col btn btn-primary mb-3 boton">Presupuesto</button>
             
         
-            <button class="col btn btn-primary mb-3 boton">Recibo</button>
+            <button class="col btn btn-primary mb-3 boton">Evolucion</button>
             
         </div>    
+    </div>
+    <div id="presupuesto" class="contenedor oculto">
+        <div class="row">
+                <label class="col">Nombre y apellido: </label>
+                <input class="col alert alert-primary" type="text" id="nomyape">
+        </div>
+        <div class="row">
+                <label class="col">DNI:</label>
+                <input class="col alert alert-primary" type="number" id="dni">
+        </div>
+        <div class="row">
+                <label class="col">Cabtudad de sesiones:</label>
+                <input class="col alert alert-primary" type="number" id="cantidad-sesiones">
+        </div>
+        <div class="row">
+                <label class="col">valor de las sesiones:</label>
+                <input class="col alert alert-primary" type="number" id="valor-sesiones">
+        </div>
+        <div class="row">
+                <button id="convertir" class=" col btn btn-primary mb-3 boton">convertir</button>
+        </div>
     </div>
     <p class="placeholder-wave">
         <span class="placeholder col-12"></span>
     </p>
+
+    <script src='src/main.js'></script>
 </body>
 </html>
